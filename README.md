@@ -15,6 +15,7 @@ The following augmentations were performed randomly of the dataset (using the ro
 - Varied Saturation: +-25%
 - Varied Exposure: +-10%
 - Varied Brightness: +-15%
+- Tiling (not used due to lack of suitable dataset)
 
 Resultant dataset had ~11000 images
 
@@ -24,6 +25,7 @@ The model used is the Yolov8 model due to the use of SPPF (Spatial Pyramid Pooli
 # Model Optimizations
 Possible optimizations are as follows:
 - Pruning: 
-- Quantization
+- Static Quantization
 - Model Distillation
 - Layer Fusion
+- SAHI (Slicing Aided Hyper Inference) (not used due to lack of suitable dataset)
