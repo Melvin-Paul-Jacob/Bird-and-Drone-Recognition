@@ -5,15 +5,25 @@ Develop a computer vision and deep learning model capable of detecting and track
 
 # Datasets
 The following are the links to the datasets used in this project:
-- [Item 1](https://universe.roboflow.com/abdulrahman-eidhah/final-jdwbv)
-- [Item 2](https://www.kaggle.com/datasets/hussein1234/drone-uav-bird/data)
+- [Abdulrahman Eidhah](https://universe.roboflow.com/abdulrahman-eidhah/final-jdwbv)
+- [Dr. Ali Hilal, Dr. Maher Al-Baghdadi](https://www.kaggle.com/datasets/hussein1234/drone-uav-bird/data)
+
+# Data Augmentations
+The following augmentations were performed randomly of the dataset (using the roboflow platform):
+- Resize to 640x640 (Fit within)
+- Horizontal Flip
+- Varied Saturation: +-25%
+- Varied Exposure: +-10%
+- Varied Brightness: +-15%
+
+Resultant dataset had ~11000 images
 
 # Base Model
-The model used is the Yolov8 model due to the use of SPPF (Spatial Pyramid Pooling Fusion) in its archetecture. The purpose of SPPF is to provide a multi-scale representation of the input feature maps. By pooling at different scales, SPPF allows the model to capture features at various levels of abstraction. This can be particularly useful in object detection, where objects of different sizes may need to be detected.  It is an optimized version with the same mathematical functionality of SPP (Spatial Pyramid Pooling) originally used in YOLOv3, but fewer floating-point operations (FLOPs). The specific archetecture used in this project is yolov8n for a balance in speed and accuracy.  
+The model used is the Yolov8 model due to the use of SPPF (Spatial Pyramid Pooling Fusion) in its architecture. The purpose of SPPF is to provide a multi-scale representation of the input feature maps. By pooling at different scales, SPPF allows the model to capture features at various levels of abstraction. This can be particularly useful in object detection, where objects of different sizes may need to be detected.  It is an optimized version with the same mathematical functionality of SPP (Spatial Pyramid Pooling) originally used in YOLOv3, but fewer floating-point operations (FLOPs). The specific architecture used in this project is yolov8n for a balance in speed and accuracy.  
 
-#Optimizations
+# Model Optimizations
 Possible optimizations are as follows:
-- Prunning: 
+- Pruning: 
 - Quantization
-- Model Distilation
-- Layer Fution
+- Model Distillation
+- Layer Fusion
