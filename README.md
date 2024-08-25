@@ -28,3 +28,17 @@ Possible optimizations are as follows:
 - Static Quantization: Static quantization converts the weights and activates of a neural network to lower precision (e.g., from 32-bit floating-point to 8-bit integers) during the training or post-training phase. During inference, both the weights and activations are quantized to int8. 
 - Model Distillation: A smaller model, often referred to as a student model, is trained to mimic the behavior of a larger, more complex model, known as a teacher model. The goal is to transfer the knowledge and performance of the larger model to the smaller one. Probability distributions produced by the teacher model for each input example is used to train student model.
 - SAHI (Slicing Aided Hyper Inference): Partitioning images into manageable slices, running object detection on each slice, and then stitching the results back together. Allows for improved detection of small objects in large images while reducing computational cost.
+
+# Setup
+- Install anaconda navigator
+- At the bottom of the environments list, select Import.
+- In the Import Environment dialog, choose to import from your Local drive.
+- Select the corresponding folder icon to choose the environment you want to import (requirements.yaml).
+- Enter a name for the new environment.
+- Click Import.
+
+# Resources
+- Coluccia, Angelo, et al. "Drone vs. bird detection: Deep learning algorithms and results from a grand challenge." Sensors 21.8 (2021): 2824.
+- Thai, Phat Van, et al. "Small Flying Object Detection and Tracking in Digital Airport Tower through Spatial-Temporal ConvNets." Available at SSRN 4740820 (2023).
+- Huang, Huadong, et al. "Improved small-object detection using YOLOv8: A comparative study." Appl. Comput. Eng 41.1 (2024): 80-88.
+- Shandilya, Shishir Kumar, et al. "YOLO-based segmented dataset for drone vs. bird detection for deep and machine learning algorithms." Data in Brief 50 (2023): 109355.
