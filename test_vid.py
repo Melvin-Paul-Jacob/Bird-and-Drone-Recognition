@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 # Model
 model = YOLO("runs/detect/train4_640_full_img/weights/pruned.pt",verbose=False)
-cap = cv2.VideoCapture("test_vid_bird.mp4")
+cap = cv2.VideoCapture("test_vid_drone.mp4")
 frame_no = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
 if not cap.isOpened():

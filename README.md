@@ -24,8 +24,7 @@ The model used is the Yolov8 model due to the use of SPPF (Spatial Pyramid Pooli
 
 # Model Optimizations
 Possible optimizations are as follows:
-- Pruning: 
-- Static Quantization
-- Model Distillation
-- Layer Fusion
-- SAHI (Slicing Aided Hyper Inference) (not used due to lack of suitable dataset)
+- Pruning: Tt is important to note that pruning a model might not always significantly reduce inference time. In some cases, pruning can introduce patterns that are not favorable for efficient computation, leading to slower inference times. The effectiveness and impact of pruning on the model's inference time depend on various factors such as the pruning ratio, architecture, and specific use case.
+- Static Quantization: Static quantization converts the weights and activates of a neural network to lower precision (e.g., from 32-bit floating-point to 8-bit integers) during the training or post-training phase.During inference, both the weights and activations are quantized to int8. 
+- Model Distillation: A smaller model, often referred to as a student model, is trained to mimic the behavior of a larger, more complex model, known as a teacher model. The goal is to transfer the knowledge and performance of the larger model to the smaller one. Probability distributions produced by the teacher model for each input example is used to train student model.
+- SAHI (Slicing Aided Hyper Inference): Partitioning images into manageable slices, running object detection on each slice, and then stitching the results back together. Allows for improved detection of small objects in large images while reducing computational cost.

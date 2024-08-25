@@ -3,3 +3,23 @@ Class     Images  Instances      Box(P          R      mAP50  mAP50-95):
   all        924       1102      0.864      0.864      0.884      0.561
  bird         65        177      0.794      0.853      0.838      0.492
 drone        859        925      0.934      0.875       0.93       0.63
+
+Validation set Pruned - 20% conv
+Class     Images  Instances      Box(P          R      mAP50  mAP50-95):
+  all        924       1102       0.24     0.0585      0.131     0.0582
+ bird         65        177      0.159     0.0791     0.0936     0.0413
+drone        859        925      0.321     0.0378      0.168      0.075
+
+Validation set Pruned - 10% conv
+Class     Images  Instances      Box(P          R      mAP50  mAP50-95):
+  all        924       1102      0.539      0.436      0.502      0.255
+ bird         65        177      0.554      0.469      0.513      0.253
+drone        859        925      0.525      0.403      0.491      0.258
+
+--- video test ---
+Bird, best.pt Average Inference time: 15.65 ms
+Bird, pruned.pt 10% conv Average Inference time: 15.65 ms
+Bird, pruned.pt 20% conv Average Inference time: 15.63 ms
+Drone, best.pt Average Inference time: 14.80 ms
+Drone, pruned.pt 10% conv Average Inference time: 15.52 ms
+Drone, pruned.pt 2 0% conv Average Inference time: 15.48 ms
