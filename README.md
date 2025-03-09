@@ -29,6 +29,9 @@ Possible optimizations are as follows:
 - Model Distillation: A smaller model, often referred to as a student model, is trained to mimic the behavior of a larger, more complex model, known as a teacher model. The goal is to transfer the knowledge and performance of the larger model to the smaller one. Probability distributions produced by the teacher model for each input example is used to train student model.
 - SAHI (Slicing Aided Hyper Inference): Partitioning images into manageable slices, running object detection on each slice, and then stitching the results back together. Allows for improved detection of small objects in large images while reducing computational cost.
 
+# Gradcam Analysis
+![Gradcam](gradcam.png)
+
 # Setup
 - Install anaconda navigator
 - At the bottom of the environments list, select Import.
